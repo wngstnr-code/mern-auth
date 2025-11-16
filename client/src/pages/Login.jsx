@@ -5,7 +5,6 @@ import { AppContext } from '../context/AppContext.jsx'
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-
 const Login = () => {
 
     const navigate = useNavigate();
@@ -65,7 +64,7 @@ const Login = () => {
                         <input 
                         onChange={e => setName (e.target.value)} 
                         value={name} 
-                        className='bg-transparent outline-none' type="text" placeholder='Full Name' required />
+                        className='bg-transparent outline-none w-full' type="text" placeholder='Full Name' required />
                     </div>
                 )}
 
@@ -74,7 +73,7 @@ const Login = () => {
                     <input 
                     onChange={e => setEmail (e.target.value)} 
                     value={email}
-                    className='bg-transparent outline-none ' type="email" placeholder='Email' required />
+                    className='bg-transparent outline-none w-full ' type="email" placeholder='Email' required />
                 </div>
 
                 <div className='mb-4 flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333a5c]'>
@@ -82,7 +81,7 @@ const Login = () => {
                     <input 
                     onChange={e => setPassword (e.target.value)} 
                     value={password}
-                    className='bg-transparent outline-none ' type="password" placeholder='Password' required />
+                    className='bg-transparent outline-none w-full ' type="password" placeholder='Password' required />
                 </div>
 
                 {state === 'Login' && (<p onClick={() => navigate('/reset-password')} className='mb-4 text-indigo-500 cursor-pointer'>Forgot Password?</p>)}

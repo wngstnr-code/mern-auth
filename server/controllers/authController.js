@@ -153,7 +153,7 @@ export const verifyEmail = async (req, res) => {
         const user = await userModel.findById(userId);
 
         if (!user) {
-            return res.json ({siccess: false, message: `User not found`});
+            return res.json ({success: false, message: `User not found`});
         }
 
         if (user.verifyOtp==='' || user.verifyOtp!== otp) {
