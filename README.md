@@ -402,7 +402,7 @@ This project is licensed under the ISC License.
 ## 👨‍💻 Author
 
 **Wangsit Nursyahada**
-- GitHub: [@username](https://github.com/username)
+- GitHub: [@wngstnr-code](https://github.com/wngstnr-code)
 - Email: wangsitsada1234@gmail.com
 
 ## 📞 Support
